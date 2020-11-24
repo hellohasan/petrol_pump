@@ -1,0 +1,50 @@
+#invoice-template {
+  padding: 1rem; }
+
+ .rowAlign,.invoice-template{
+   position: relative;
+ }
+.bottom-align-text{
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+}
+.displayHide{
+  display: none;
+}
+.company-text {
+  position: absolute;
+  width: 100%;
+  bottom: -15px;
+}
+.table th, .table td {
+  padding: 0.75rem 0.75rem !important;
+}
+.p-35{
+  padding: 3px 5px;
+}
+
+@media print {
+  html body.fixed-navbar{
+    padding-top: 0rem;
+  }
+  #invoice-template {
+    padding: 1rem !important;
+  }
+  .card-body{
+    padding: 0px !important;
+    margin: 0px !important;
+    flex: none;
+  }
+  #invoice-footer{
+    display: none;
+  }
+  a[href]:after {
+    display: none;
+    visibility: hidden;
+  }
+  .displayHide{
+    display: block;
+  }
+}
+
